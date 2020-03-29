@@ -73,3 +73,9 @@
 {
 	color: #D1E5FC;
 }
+#qrcode
+{
+border: solid #ccc;
+margin: auto;
+border-radius: 25px;
+}
