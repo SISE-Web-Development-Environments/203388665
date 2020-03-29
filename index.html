@@ -2,6 +2,11 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="style.css" />
+		
+		<link rel="stylesheet" href="css/emojionearea.min.css">
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	
+		<Script src="js/emojionearea.min.js"></Script>
 	</head>
 	<body style="background-color:#5E5F61;">
 		<div id= "menu" class="menuText">
@@ -16,6 +21,8 @@
 		</div>
 				  
 		<section id="about" class="section">
+			<br/>
+			<br/>
 			<br/>
 				<h1>
 				about me
@@ -42,6 +49,8 @@
 
 		<section id="photos" class="section">
 			<br/>
+			<br/>
+			<br/>
 				<h1>
 				my photos
 				</h1>
@@ -67,6 +76,8 @@
 
 		<section id="playlist" class="section">
 			<br/>
+			<br/>
+			<br/>
 				<h1>
 				my playlist
 				</h1>
@@ -77,9 +88,18 @@
 		</section>
 
 		<section id="like" class="section">
-				<h1>
-				give me a like
-				</h1>
+			<br/>
+			<br/>
+			<br/>
+			<h1>
+			give me a like
+			</h1>
+			<div id="fb-root"></div>
+			<div id="fb-root"></div>
+			<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0"></script>
+			<center>
+				<div class="fb-like" data-href="https://sise-web-development-environments.github.io/assignment1-avivamsallem/index.html" data-width="20" data-layout="standard" data-action="like" data-size="small" data-share="true"></div>
+			</center>
 			<br/>
 			<br/>
 		</section>
@@ -88,22 +108,10 @@
 			<br/>
 			<br/>
 			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
 				<h1>
 				scan my code
 				</h1>
-			<br/>
+			<img src=myQRcode.jpg class="center"/>
 			<br/>
 		</section>
 
@@ -112,48 +120,120 @@
 			<br/>
 			<br/>
 			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
 				<h1>
 				ans
 				</h1>
-			<br/>
-			<br/>
+				<table class="answers" border=1 align=center cellpadding="0" cellspacing="0" bordercolor="white" width="70%">
+				<tr>
+					<td width="20%">
+						<h2>
+							Web 1.0
+						</h2>
+					</td>
+					<td width="20%">
+						<h2>
+							Web 2.0
+						</h2>
+					</td>
+						<td width="20%">
+						<h2>
+							Web 3.0
+						</h2>
+					</td>
+				</tr>
+				<tr>
+					<td width="20%">
+						<h3>
+							the web is Read-Only and static.
+						</h3>
+					</td>
+					<td width="20%">
+						<h3>
+							the web is wildly Read-Write.
+						</h3>
+					</td>
+						<td width="20%">
+						<h3>
+							the web is portable and personal - Read-Write intelligent web.
+						</h3>
+				</tr>
+				<tr>
+					<td width="20%">
+						<h3>
+							search engines retrieve macro contents. Search is very fast but many times results are inaccurate or more than users can chew.
+						</h3>
+					</td>
+					<td width="20%">
+						<h3>
+							search engines retrieve tags with micro contents. The process of tagging is manual, tedious and covers negligible percents of the WWW.
+						</h3>
+					</td>
+					<td width="20%">
+						<h3>
+						search engines will retrieve micro content texts which were tagged automatically.This implies translating billions of Web 1.0 macro contents into micro contents. The result could be more precise search because tagging can solve part of the ambiguity that homonyms and synonyms introduce into the process of Search. 
+						</h3>
+					</td>
+				</tr>
+				<tr>
+				<td width="20%">
+						<h3>
+							Companies publish content that people consume (e.g. Ynet)
+						</h3>
+					</td>
+					<td width="20%">
+						<h3>
+							People publish content  that other people can consume, companies build platforms that let people publish content for other people (e.g. YouTube, Wikipedia)
+						</h3>
+					</td>
+					<td width="20%">
+						<h3>
+						People build applications that people can interact with, companies build platforms that let people publish services by leveraging the associations between people or special content ( e. g. Facebook, Instagram) 
+						</h3>
+					</td>
+				</tr>
+				</table>
 		</section>
 
 		<section id="contact" class="section">
 			<br/>
 			<br/>
 			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>
 				<h1>
 				contact me
 				</h1>
-			<br/>
+				<h2 id="contactSection" align="left">
+				so what do you think?<br/>
+				send me an e-mail here and let me know.<br/>
+				</h2>
+				<h3>
+					<form action="mailto:avivams@post.bgu.ac.il" method="post" enctype="text/plain">
+						Name:<br>
+						<input type="text" name="name"><br>
+						E-mail:<br>
+						<input type="text" name="mail"><br>
+						Comment:<br>
+						<textarea id="myTextarea"></textarea><br/><br/>
+						<script>
+  
+							$(document).ready(function() {
+							  $("#myTextarea").emojioneArea({
+								pickerPosition: "top"});
+							})
+				  
+						</script>
+						<input type="submit" value="Send">
+						<input type="reset" value="Reset">
+						</form>
+				</h3>
 			<br/>
 		</section>
-
-
+		</script> 
+		<script> 
+        function add() { 
+				var x = gender;
+				document.getElementById(comment).value += comment;
+        } 
+		</script>
 		<script type="text/javascript">
 		$(function(){
 		  $("#nav a").click(function(e){
