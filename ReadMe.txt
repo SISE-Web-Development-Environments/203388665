@@ -2,11 +2,11 @@ Name: Aviv Amsellem.
 ID: 203388665.
 git user: avivamsallem
 
-The site i built is on a famous guitarist and a band member of "Guns N' Roses" - "Slash".
+The site i built is on Ahira Nishry, and incredible 95 years old woman who loves to sing!
 The site conatins:
-	- A short background about slash life course, some photos from diffrent situation.
-	- "Slashe"'s photos from diffrent places.
-	- A playlist of songs "Slash" took part.
+	- A short background about Ashira's life.
+	- Ashira's photos from diffrent places.
+	- A playlist conatins some performances of Ashria sings.
 	- Answers for the questions asked at the assignment.
 	- A way to contact me through an E-mail and also adding an emojis.
 
